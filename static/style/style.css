@@ -14,6 +14,7 @@ header .header{
     align-items: center;
     align-content: space-around;
     justify-content: space-between;
+    margin-bottom: 4    0px;
 }
 header div .logo{
     height: 100px;
@@ -33,7 +34,13 @@ header .nav li{
     padding: 0 15px;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 20px;
+    
+}
+header .nav li a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: auto;
+    padding: 8px;
 }
 
 header .nav li .selected{
@@ -44,9 +51,8 @@ header .nav li .selected{
     color:red;
 }
 
-.header .nav li:hover{
+.header .nav li a:hover{
     background-color: rgba(255, 255, 255, 0.705);
-    padding: 15px;
     border-radius: 10px;
     text-decoration: none;
     cursor: pointer;
@@ -267,19 +273,19 @@ section .trainers-mg{
     
 }
 
-.calculator-form table{
+.table-calculator{
     margin: 20px auto;
 }
 
-.calculator-form table tr{
+.fila-calculator{
     height: 50px;
 }
 
-.calculator-form table tr td{
+.cell-calculator{
     width: 350px;
     
 }
-.calculator-form input{
+.cell-calculator input{
     width: 90%;
     height: 40px;
     border-radius: 10px;
@@ -288,7 +294,7 @@ section .trainers-mg{
 
 }
 
-.calculator-form select{
+.cell-calculator select{
     width: 95%;
     height: 40px;
     border-radius: 10px;
@@ -297,7 +303,7 @@ section .trainers-mg{
     font-weight: bolder;
 }
 
-.calculator-form button{
+.cell-calculator button{
     width: 95%;
     height: 45px;
     border-radius: 10px;
@@ -315,7 +321,7 @@ section .trainers-mg{
     width: 50%;
 }
 
-.info-imc table{
+.table-imc{
     height: 300px;
     width: 90%;
     border: 5px solid white;
@@ -323,13 +329,14 @@ section .trainers-mg{
     margin-left: 50px;
 }
 
-.info-imc table th{
+.table-imc th{
     font-size: 20px;
     background-color: rgb(0, 0, 28);
     color: red;
+    height: 50px;
 }
 
-.info-imc table td{
+.table-imc td{
     font-size: 18px;
     border: 1px solid white;
     width: 50%;
@@ -337,6 +344,9 @@ section .trainers-mg{
     background-color: rgb(55, 55, 55);
 }
 
+#resultado{
+    color: beige;
+}
 
 /*FOOTER*/
 .footer{
@@ -400,4 +410,214 @@ section .trainers-mg{
 
 .social-footer img:hover{
     scale: 1.1;
+}
+
+
+/* PAGE CLASES */
+
+.title-clases{
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.clases-myura{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.clase-gym{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.clase-gym span{
+    margin:10px auto;
+    font-size: 16px;
+}
+
+.img-clase{
+    width: 300px;
+    height: auto;
+    filter: opacity(50%);
+}
+
+.clase-gym-content{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.clase-gym-content h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.calendar-section{
+    width: 90%;
+    margin: auto;
+}
+
+.title-calendario{
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.calendar{
+    width: 100%;
+}
+
+.cell-calendar{
+    border: 5px solid rgb(0, 0, 0);
+    height: 100px;
+    width: 100px;
+    background-color: rgb(45, 40, 40);
+    border-collapse: collapse;
+}
+.cell-calendar{
+    padding: 0px 5px;
+}
+
+.cell-calendar:hover{
+    background-color: brown;
+}
+
+.reserva-section{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.title-reserva-section{
+    font-size: 30px;
+    text-align: center;
+    margin: 50px auto
+}
+
+.sub-title-reserva{
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+.form-reserva{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-content{
+    width: 50%;
+}
+
+.form-content-img{
+    width: 50%;
+}
+
+.form-reserva-clase{
+    padding: 50px;
+    
+}
+
+.table-reserva-clase{
+    width: 100%;
+}
+
+.cell-reserva{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.table-reserva-clase input{
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.table-reserva-clase select{
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-reserva-img img{
+    width: 600px;
+    border-radius: 20px;
+}
+
+.plan-container{
+    width: 95%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.plan-gym{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px white;
+}
+
+.plan-gym-img{
+    width: 400px;
+    height: 300px;
+}
+.plan-gym-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.plan-gym-content p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.plan-separator{
+    width: 90%;
+    margin: 15px 0;
+}
+
+.plan-gym-content .button{
+    width: 100px;
+    height: 30px;
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.banner-plan{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner-plan-content{
+    padding: 50px;
+}
+
+.banner-plan-img{
+    width: 100%;
+    height: 90%;
 }
